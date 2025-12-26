@@ -5,47 +5,94 @@
   <title>Kaustav Dutta</title>
   <style>
     body {
+      margin: 0;
       font-family: Georgia, "Times New Roman", serif;
-      max-width: 620px;
-      margin: 90px auto;
-      line-height: 1.55;
-      font-size: 19px;
       color: #111;
+      background: #fff;
+    }
+
+    .banner {
+      height: 220px;
+      background-image: url("astro_banner.jpg");
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .profile-pic {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 4px solid white;
+      position: absolute;
+      bottom: -70px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-image: url("LinkedIn_DP.jpeg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 110px auto 0 auto;
+      padding: 0 20px;
       text-align: left;
     }
 
     h1 {
-      font-size: 44px;
-      font-weight: 700;
-      margin-bottom: 18px;
+      text-align: center;
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .nav {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+
+    .nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #555;
+      border-bottom: 1px solid transparent;
+    }
+
+    .nav a:hover {
+      border-bottom: 1px solid #111;
+      color: #111;
     }
 
     p {
+      font-size: 19px;
+      line-height: 1.6;
       margin-bottom: 20px;
-    }
-
-    a {
-      color: #111;
-      text-decoration: none;
-      border-bottom: 1px solid #aaa;
-    }
-
-    a:hover {
-      border-bottom-color: #111;
     }
   </style>
 </head>
 <body>
-  <h1>Kaustav Dutta</h1>
-  <p>
-    PhD researcher in astroparticle physics at Johannes Gutenberg University Mainz,
-    working with the IceCube Neutrino Observatory.
-  </p>
-  <p>
-    <a href="cv.pdf">CV</a> ·
-    <a href="#">Publications</a> ·
-    <a href="https://github.com/kaustav-dutta">GitHub</a> ·
-    <a href="mailto:your@email">Email</a>
-  </p>
+
+  <div class="banner">
+    <div class="profile-pic"></div>
+  </div>
+
+  <div class="container">
+    <h1>Kaustav Dutta</h1>
+
+    <div class="nav">
+      <a href="#">HOME</a>
+      <a href="#">RESEARCH</a>
+      <a href="cv.pdf">CV</a>
+      <a href="mailto:your@email">CONTACT</a>
+    </div>
+
+    <p>
+      PhD researcher in astroparticle physics at Johannes Gutenberg University Mainz,
+      working with the IceCube Neutrino Observatory.
+    </p>
+  </div>
+
 </body>
 </html>
