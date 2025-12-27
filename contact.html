@@ -77,6 +77,10 @@
       line-height: 1.65;
       margin-bottom: 24px;
     }
+
+    .no-link {
+      pointer-events: none;
+    }
   </style>
 </head>
 <body>
@@ -106,13 +110,17 @@
 
     <p>
       Work email:
-      <a href="mailto:kdutta@icecube.wisc.edu">kdutta@icecube.wisc.edu</a><br>
+      <a href="#" onclick="location.href='mailto:kdutta@icecube.wisc.edu'">
+        kdutta@icecube.wisc.edu
+      </a><br>
       Personal email:
-      <a href="mailto:kaustav.loyola@gmail.com">kaustav.loyola@gmail.com</a>
+      <a href="#" onclick="location.href='mailto:kaustav.loyola@gmail.com'">
+        kaustav.loyola@gmail.com
+      </a>
     </p>
 
     <p>
-      Phone: +49&nbsp;178&nbsp;671&nbsp;9634
+      Phone: <span class="no-link">+49 178 671 9634</span>
     </p>
 
     <p>
