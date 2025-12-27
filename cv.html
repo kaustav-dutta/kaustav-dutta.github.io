@@ -12,17 +12,37 @@
     }
 
     .banner {
-      height: 200px;
+      height: 260px;
       background-image: url("astro_banner.png");
       background-size: cover;
       background-position: center;
       position: relative;
     }
 
+    .profile-pic {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 5px solid white;
+      position: absolute;
+      bottom: -100px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-image: url("LinkedIn_DP.jpeg");
+      background-size: cover;
+      background-position: center;
+    }
+
     .container {
       max-width: 900px;
-      margin: 40px auto;
+      margin: 150px auto 0 auto;
       padding: 0 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 50px;
+      margin-bottom: 55px;
     }
 
     .nav {
@@ -44,6 +64,13 @@
       color: #111;
     }
 
+    .nav-line {
+      width: 100%;
+      height: 1px;
+      background: #ccc;
+      margin-bottom: 40px;
+    }
+
     iframe {
       width: 100%;
       height: 95vh;
@@ -53,15 +80,21 @@
 </head>
 <body>
 
-  <div class="banner"></div>
+  <div class="banner">
+    <div class="profile-pic"></div>
+  </div>
 
   <div class="container">
+    <h1>Kaustav Dutta</h1>
+
     <div class="nav">
       <a href="index.html">HOME</a>
       <a href="#">RESEARCH</a>
       <a href="cv.html" class="active">CV</a>
       <a href="mailto:your@email">CONTACT</a>
     </div>
+
+    <div class="nav-line"></div>
 
     <iframe src="CV_DAAD.pdf"></iframe>
   </div>
