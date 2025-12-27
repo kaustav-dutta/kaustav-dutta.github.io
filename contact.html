@@ -78,8 +78,14 @@
       margin-bottom: 24px;
     }
 
-    .no-link {
-      pointer-events: none;
+    .email {
+      cursor: pointer;
+      color: #444;
+      text-decoration: underline;
+    }
+
+    .email:hover {
+      color: #111;
     }
   </style>
 </head>
@@ -110,17 +116,17 @@
 
     <p>
       Work email:
-      <a href="#" onclick="location.href='mailto:kdutta@icecube.wisc.edu'">
+      <span class="email" onclick="openMail('kdutta@icecube.wisc.edu')">
         kdutta@icecube.wisc.edu
-      </a><br>
+      </span><br>
       Personal email:
-      <a href="#" onclick="location.href='mailto:kaustav.loyola@gmail.com'">
+      <span class="email" onclick="openMail('kaustav.loyola@gmail.com')">
         kaustav.loyola@gmail.com
-      </a>
+      </span>
     </p>
 
     <p>
-      Phone: <span class="no-link">+49 178 671 9634</span>
+      Phone: +49&nbsp;178&nbsp;671&nbsp;9634
     </p>
 
     <p>
@@ -131,6 +137,12 @@
     </p>
 
   </div>
+
+  <script>
+    function openMail(address) {
+      window.location.href = 'mailto:' + address;
+    }
+  </script>
 
 </body>
 </html>
